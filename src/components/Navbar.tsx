@@ -16,7 +16,7 @@ const Navbar = ({ onSearch }: NavbarProps) => {
     <header className="bg-slate-50 p-4 flex justify-between items-center">
       <h1 className="text-2xl font-bold lg:text-4xl">Notes</h1>
       <input
-        className="navbar-search-input p-2 border border-gray-200 focus:border-blue-500 focus:outline-blue-500 rounded-lg w-3/5 mr-2 text-sm"
+        className="navbar-search-input p-2 border border-gray-200 focus:outline-none focus:outline-blue-500 rounded-lg w-3/5 mr-2 text-sm"
         type="text"
         placeholder="Search notes..."
         value={searchTerm}
