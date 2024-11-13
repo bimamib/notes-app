@@ -15,7 +15,7 @@ const Body = ({ notes, addNote, deleteNote, toggleArchiveNote }: BodyProps) => {
   const archivedNotes = notes.filter((note) => note.archived);
 
   return (
-    <main className="max-w-2xl w-4/5 p-4 mx-auto">
+    <main className="w-4/5 p-4 mx-auto">
       <AddNote addNote={addNote} />
       <ActiveNote
         notes={activeNotes}
