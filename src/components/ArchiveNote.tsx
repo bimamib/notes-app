@@ -8,7 +8,9 @@ const ArchiveNote = ({
 }: NoteListProps) => {
   return (
     <div>
-      <h1 className="mb-5 text-xl font-bold lg:text-2xl">Archived Notes</h1>
+      <h1 className="mb-5 mt-10 text-xl font-bold lg:text-2xl">
+        Archived Notes
+      </h1>
       <NoteList
         notes={notes}
         deleteNote={deleteNote}
