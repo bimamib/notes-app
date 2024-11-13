@@ -3,7 +3,7 @@ import { NoteItemProps } from "../utils/types";
 
 const NoteItem = ({ note, deleteNote, toggleArchiveNote }: NoteItemProps) => {
   return (
-    <div className="bg-white p-5 mb-4 border border-gray-300 rounded-md shadow">
+    <div className="bg-white p-5 mb-4 rounded-xl shadow">
       <>
         <h2 className="text-xl text mb-2 font-bold">{note.title}</h2>
         <p className="text-base mb-4 text-justify">{note.body}</p>
