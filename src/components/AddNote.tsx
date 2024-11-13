@@ -21,10 +21,7 @@ const AddNote = ({ addNote }: AddNoteProps) => {
   };
 
   return (
-    <form
-      className="p-5 rounded-xl border shadow-md mb-12"
-      onSubmit={handleSubmit}
-    >
+    <form className="p-5 rounded-xl shadow mb-12" onSubmit={handleSubmit}>
       <div className="mb-4">
         <input
           className="w-full p-2 text-base border rounded-lg focus:border-blue-500 focus:outline-blue-500"
