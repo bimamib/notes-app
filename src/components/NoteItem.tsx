@@ -12,13 +12,13 @@ const NoteItem = ({ note, deleteNote, toggleArchiveNote }: NoteItemProps) => {
         </p>
         <div className="flex gap-2">
           <button
-            className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
+            className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
             onClick={() => toggleArchiveNote(note.id)}
           >
             {note.archived ? "Unarchive" : "Archive"}
           </button>
           <button
-            className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
+            className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-100 text-red-800 hover:bg-red-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
             onClick={() => deleteNote(note.id)}
           >
             Delete
