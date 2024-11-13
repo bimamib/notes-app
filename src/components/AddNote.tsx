@@ -21,10 +21,13 @@ const AddNote = ({ addNote }: AddNoteProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-5 rounded-lg shadow-md mb-10">
-      <div className="mb-6">
+    <form
+      className="p-5 rounded-xl border shadow-md mb-12"
+      onSubmit={handleSubmit}
+    >
+      <div className="mb-4">
         <input
-          className="w-full p-3 text-base border rounded-md"
+          className="w-full p-2 text-base border rounded-lg focus:border-blue-500 focus:outline-blue-500"
           type="text"
           value={title}
           maxLength={maxTitleLength}
@@ -32,13 +35,13 @@ const AddNote = ({ addNote }: AddNoteProps) => {
           placeholder="Whats Happened"
           required
         />
-        <small className="text-sm text-gray-200">
-          Remaining Characters {maxTitleLength - title.length}
+        <small className="text-sm text-gray-300">
+          Remaining Characters: {maxTitleLength - title.length}
         </small>
       </div>
-      <div className="mb-6">
+      <div className="mb-4">
         <textarea
-          className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+          className="w-full p-3 text-base border rounded-lg focus:border-blue-500 focus:outline-blue-500"
           placeholder="Details"
           value={body}
           onChange={(event) => setBody(event.target.value)}
@@ -46,7 +49,7 @@ const AddNote = ({ addNote }: AddNoteProps) => {
         />
       </div>
       <button
-        className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
         type="submit"
       >
         Add Notes
