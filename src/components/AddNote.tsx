@@ -24,7 +24,7 @@ const AddNote = ({ addNote }: AddNoteProps) => {
     <form className="p-5 rounded-xl shadow mb-12" onSubmit={handleSubmit}>
       <div className="mb-4">
         <input
-          className="w-full p-2 text-base border rounded-lg focus:border-blue-500 focus:outline-blue-500"
+          className="w-full p-2 text-base border rounded-lg focus:outline-none focus:outline-blue-500"
           type="text"
           value={title}
           maxLength={maxTitleLength}
@@ -38,7 +38,7 @@ const AddNote = ({ addNote }: AddNoteProps) => {
       </div>
       <div className="mb-4">
         <textarea
-          className="w-full p-3 text-base border rounded-lg focus:border-blue-500 focus:outline-blue-500"
+          className="w-full p-3 text-base border rounded-lg focus: outline-none focus:outline-blue-500"
           placeholder="Details"
           value={body}
           onChange={(event) => setBody(event.target.value)}
@@ -46,7 +46,7 @@ const AddNote = ({ addNote }: AddNoteProps) => {
         />
       </div>
       <button
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-green-100 text-green-800 hover:bg-green-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
         type="submit"
       >
         Add Notes
