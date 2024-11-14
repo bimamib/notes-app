@@ -3,10 +3,10 @@ import { NoteItemProps } from "../utils/types";
 
 const NoteItem = ({ note, deleteNote, toggleArchiveNote }: NoteItemProps) => {
   return (
-    <div className="p-5 mb-4 bg-white shadow rounded-xl">
+    <div className="p-4 mb-4 bg-white shadow sm:p-5 rounded-xl">
       <>
-        <h2 className="mb-2 text-xl font-bold text">{note.title}</h2>
-        <p className="mb-4 text-base text-justify">{note.body}</p>
+        <h2 className="mb-2 text-lg font-bold sm:text-xl">{note.title}</h2>
+        <p className="mb-4 text-sm text-justify sm:text-base">{note.body}</p>
         <p className="mb-3 text-sm text-gray-500">
           {showFormattedDate(note.createdAt)}
         </p>
