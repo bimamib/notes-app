@@ -12,11 +12,11 @@ const Navbar = ({ onSearch }: NavbarProps) => {
     onSearch(searchTerm);
   };
 
-  // const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-  //   if (e.key === "Enter") {
-  //     handleSearchClick();
-  //   }
-  // };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearchClick();
+    }
+  };
 
   return (
     <header className="flex items-end justify-between p-4 bg-slate-50">
@@ -46,6 +46,7 @@ const Navbar = ({ onSearch }: NavbarProps) => {
             placeholder="Search notes..."
             value={searchTerm}
             onChange={handleSearchChange}
+            onKeyDown={handleKeyDown}
           />
         </div>
         <button
