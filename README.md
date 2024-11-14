@@ -41,17 +41,27 @@ Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 ### How to run
 
 1. Clone this Repository
-2. Run ```
-   npm install
-
-````
-3. Run ```
-npm run dev
-````
-
-4. Open ```
-   https://localhost:5173/
-
-```in your browser 🚀
 
 ```
+git clone [text](https://github.com/bimamib/notes-app.git)
+```
+
+2. Run
+
+```
+npm install
+```
+
+3. Run
+
+```
+npm run dev
+```
+
+4. Open
+
+```
+https://localhost:5173/
+```
+
+in your browser 🚀
