@@ -17,7 +17,11 @@ Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 
 ## Kriteria Utama 3: Mampu Menghapus Catatan
 
-<p text-align:justify>
 - Aplikasi harus menyediakan tombol hapus untuk menghapus data catatan yang disimpan.
 - Terdapat conditional rendering di mana bila tidak terdapat data catatan, maka UI menampilkan pesan “Tidak ada catatan” atau pesan apa pun yang mengindikasikan data catatan kosong.
+
+## Website View
+
+<p align="center">
+    <img src="https://ibb.co.com/ZGx57bw" alt="Web View">
 </p>
