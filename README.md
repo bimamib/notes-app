@@ -23,5 +23,5 @@ Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 ## Website View
 
 <p align="center">
-    <img src="https://ibb.co.com/ZGx57bw" alt="Web View">
+    <<img src="https://i.ibb.co.com/WGfZjRd/Web.png" alt="Web">
 </p>
