@@ -27,7 +27,6 @@ const AddNote = ({ addNote }: AddNoteProps) => {
           className="w-full p-2 text-base border rounded-lg focus:outline-none focus:outline-blue-500"
           type="text"
           value={title}
-          maxLength={maxTitleLength}
           onChange={handleTitleChange}
           placeholder="Title Notes"
           required
