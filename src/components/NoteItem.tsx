@@ -3,22 +3,22 @@ import { NoteItemProps } from "../utils/types";
 
 const NoteItem = ({ note, deleteNote, toggleArchiveNote }: NoteItemProps) => {
   return (
-    <div className="bg-white p-5 mb-4 rounded-xl shadow">
+    <div className="p-5 mb-4 bg-white shadow rounded-xl">
       <>
-        <h2 className="text-xl text mb-2 font-bold">{note.title}</h2>
-        <p className="text-base mb-4 text-justify">{note.body}</p>
-        <p className="text-sm text-gray-500 mb-3">
+        <h2 className="mb-2 text-xl font-bold text">{note.title}</h2>
+        <p className="mb-4 text-base text-justify">{note.body}</p>
+        <p className="mb-3 text-sm text-gray-500">
           {showFormattedDate(note.createdAt)}
         </p>
         <div className="flex gap-2">
           <button
-            className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center px-2 py-1 text-sm font-medium text-blue-800 bg-blue-100 border border-transparent rounded-lg gap-x-2 hover:bg-blue-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
             onClick={() => toggleArchiveNote(note.id)}
           >
             {note.archived ? "Unarchive" : "Archive"}
           </button>
           <button
-            className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-100 text-red-800 hover:bg-red-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
+            className="inline-flex items-center px-2 py-1 text-sm font-medium text-red-800 bg-red-100 border border-transparent rounded-lg gap-x-2 hover:bg-red-200 focus:outline-none focus:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none"
             onClick={() => deleteNote(note.id)}
           >
             Delete
