@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+# Notes Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 
-Currently, two official plugins are available:
+## Kriteria Utama 1: Mampu Menampilkan Daftar Catatan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Aplikasi harus mampu menampilkan daftar catatan dengan data awal (initial data) yang telah kami sediakan.
+- Memanfaatkan state component untuk menyimpan data catatan.
+- Menggunakan teknik array map untuk menampilkan daftar catatan.
 
-## Expanding the ESLint configuration
+## Kriteria Utama 2: Mampu Menambahkan Catatan
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Aplikasi harus mampu menambahkan data catatan baru.
+- Memanfaatkan controlled component dalam membuat form input.
+- Data catatan disimpan cukup pada memori saja (akan hilang jika browser di-refresh).
+- Data catatan yang disimpan merupakan objek JavaScript dengan struktur berikut
 
-- Configure the top-level `parserOptions` property like this:
+## Kriteria Utama 3: Mampu Menghapus Catatan
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<p text-align:justify>
+- Aplikasi harus menyediakan tombol hapus untuk menghapus data catatan yang disimpan.
+- Terdapat conditional rendering di mana bila tidak terdapat data catatan, maka UI menampilkan pesan “Tidak ada catatan” atau pesan apa pun yang mengindikasikan data catatan kosong.
+</p>
