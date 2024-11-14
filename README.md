@@ -23,5 +23,18 @@ Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 ## Website View
 
 <p align="center">
-    <<img src="https://i.ibb.co.com/WGfZjRd/Web.png" alt="Web">
+    <img src="https://i.ibb.co.com/WGfZjRd/Web.png" alt="Web">
 </p>
+
+## Mobile View
+
+<p align="center">
+    <img src="https://i.ibb.co.com/MS0t88V/Tampilan-Mobile-Notes-Apps.png" alt="Tampilan Mobile Notes Apps">
+</p>
+<!-- 
+### How to run
+
+1. Clone this Repository
+2. Run `npm install`
+3. Run `npm run dev`
+4. Open `https://localhost:5173/` in your browser -->
