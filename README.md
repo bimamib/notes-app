@@ -41,6 +41,17 @@ Proyek Akhir: Membangun Aplikasi Catatan Menggunakan React
 ### How to run
 
 1. Clone this Repository
-2. Run `npm install`
-3. Run `npm run dev`
-4. Open `https://localhost:5173/` in your browser 🚀
+2. Run ```
+   npm install
+
+````
+3. Run ```
+npm run dev
+````
+
+4. Open ```
+   https://localhost:5173/
+
+```in your browser 🚀
+
+```
